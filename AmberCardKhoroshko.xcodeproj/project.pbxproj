@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */; };
+		B531EAFE1F8FD92800B94F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFD1F8FD92800B94F42 /* ViewController.swift */; };
+		B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EAFF1F8FD92800B94F42 /* Main.storyboard */; };
+		B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */; };
+		B531EB061F8FD92800B94F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B531EB051F8FD92800B94F42 /* Assets.xcassets */; };
+		B531EB091F8FD92800B94F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */; };
+		B531EB141F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB131F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift */; };
+		B531EB1F1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB1E1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B531EB101F8FD92800B94F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B531EAF01F8FD92800B94F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B531EAF71F8FD92800B94F42;
+			remoteInfo = AmberCardKhoroshko;
+		};
+		B531EB1B1F8FD92800B94F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B531EAF01F8FD92800B94F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B531EAF71F8FD92800B94F42;
+			remoteInfo = AmberCardKhoroshko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmberCardKhoroshko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B531EAFD1F8FD92800B94F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B531EB001F8FD92800B94F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B531EB031F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AmberCardKhoroshko.xcdatamodel; sourceTree = "<group>"; };
+		B531EB051F8FD92800B94F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B531EB081F8FD92800B94F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B531EB0A1F8FD92800B94F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B531EB0F1F8FD92800B94F42 /* AmberCardKhoroshkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmberCardKhoroshkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B531EB131F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberCardKhoroshkoTests.swift; sourceTree = "<group>"; };
+		B531EB151F8FD92800B94F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B531EB1A1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmberCardKhoroshkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B531EB1E1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberCardKhoroshkoUITests.swift; sourceTree = "<group>"; };
+		B531EB201F8FD92800B94F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B531EAF51F8FD92800B94F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB0C1F8FD92800B94F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB171F8FD92800B94F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B531EAEF1F8FD92800B94F42 = {
+			isa = PBXGroup;
+			children = (
+				B531EAFA1F8FD92800B94F42 /* AmberCardKhoroshko */,
+				B531EB121F8FD92800B94F42 /* AmberCardKhoroshkoTests */,
+				B531EB1D1F8FD92800B94F42 /* AmberCardKhoroshkoUITests */,
+				B531EAF91F8FD92800B94F42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B531EAF91F8FD92800B94F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */,
+				B531EB0F1F8FD92800B94F42 /* AmberCardKhoroshkoTests.xctest */,
+				B531EB1A1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B531EAFA1F8FD92800B94F42 /* AmberCardKhoroshko */ = {
+			isa = PBXGroup;
+			children = (
+				B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */,
+				B531EAFD1F8FD92800B94F42 /* ViewController.swift */,
+				B531EAFF1F8FD92800B94F42 /* Main.storyboard */,
+				B531EB051F8FD92800B94F42 /* Assets.xcassets */,
+				B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */,
+				B531EB0A1F8FD92800B94F42 /* Info.plist */,
+				B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */,
+			);
+			path = AmberCardKhoroshko;
+			sourceTree = "<group>";
+		};
+		B531EB121F8FD92800B94F42 /* AmberCardKhoroshkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B531EB131F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift */,
+				B531EB151F8FD92800B94F42 /* Info.plist */,
+			);
+			path = AmberCardKhoroshkoTests;
+			sourceTree = "<group>";
+		};
+		B531EB1D1F8FD92800B94F42 /* AmberCardKhoroshkoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B531EB1E1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift */,
+				B531EB201F8FD92800B94F42 /* Info.plist */,
+			);
+			path = AmberCardKhoroshkoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B531EAF71F8FD92800B94F42 /* AmberCardKhoroshko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B531EB231F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshko" */;
+			buildPhases = (
+				B531EAF41F8FD92800B94F42 /* Sources */,
+				B531EAF51F8FD92800B94F42 /* Frameworks */,
+				B531EAF61F8FD92800B94F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmberCardKhoroshko;
+			productName = AmberCardKhoroshko;
+			productReference = B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B531EB0E1F8FD92800B94F42 /* AmberCardKhoroshkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B531EB261F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoTests" */;
+			buildPhases = (
+				B531EB0B1F8FD92800B94F42 /* Sources */,
+				B531EB0C1F8FD92800B94F42 /* Frameworks */,
+				B531EB0D1F8FD92800B94F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B531EB111F8FD92800B94F42 /* PBXTargetDependency */,
+			);
+			name = AmberCardKhoroshkoTests;
+			productName = AmberCardKhoroshkoTests;
+			productReference = B531EB0F1F8FD92800B94F42 /* AmberCardKhoroshkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B531EB191F8FD92800B94F42 /* AmberCardKhoroshkoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B531EB291F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoUITests" */;
+			buildPhases = (
+				B531EB161F8FD92800B94F42 /* Sources */,
+				B531EB171F8FD92800B94F42 /* Frameworks */,
+				B531EB181F8FD92800B94F42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B531EB1C1F8FD92800B94F42 /* PBXTargetDependency */,
+			);
+			name = AmberCardKhoroshkoUITests;
+			productName = AmberCardKhoroshkoUITests;
+			productReference = B531EB1A1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B531EAF01F8FD92800B94F42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Emma Khoroshko";
+				TargetAttributes = {
+					B531EAF71F8FD92800B94F42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 57UR83VR6Y;
+						ProvisioningStyle = Automatic;
+					};
+					B531EB0E1F8FD92800B94F42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 57UR83VR6Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B531EAF71F8FD92800B94F42;
+					};
+					B531EB191F8FD92800B94F42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 57UR83VR6Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B531EAF71F8FD92800B94F42;
+					};
+				};
+			};
+			buildConfigurationList = B531EAF31F8FD92800B94F42 /* Build configuration list for PBXProject "AmberCardKhoroshko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B531EAEF1F8FD92800B94F42;
+			productRefGroup = B531EAF91F8FD92800B94F42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B531EAF71F8FD92800B94F42 /* AmberCardKhoroshko */,
+				B531EB0E1F8FD92800B94F42 /* AmberCardKhoroshkoTests */,
+				B531EB191F8FD92800B94F42 /* AmberCardKhoroshkoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B531EAF61F8FD92800B94F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531EB091F8FD92800B94F42 /* LaunchScreen.storyboard in Resources */,
+				B531EB061F8FD92800B94F42 /* Assets.xcassets in Resources */,
+				B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB0D1F8FD92800B94F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB181F8FD92800B94F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B531EAF41F8FD92800B94F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531EAFE1F8FD92800B94F42 /* ViewController.swift in Sources */,
+				B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */,
+				B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB0B1F8FD92800B94F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531EB141F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531EB161F8FD92800B94F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531EB1F1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B531EB111F8FD92800B94F42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B531EAF71F8FD92800B94F42 /* AmberCardKhoroshko */;
+			targetProxy = B531EB101F8FD92800B94F42 /* PBXContainerItemProxy */;
+		};
+		B531EB1C1F8FD92800B94F42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B531EAF71F8FD92800B94F42 /* AmberCardKhoroshko */;
+			targetProxy = B531EB1B1F8FD92800B94F42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B531EAFF1F8FD92800B94F42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B531EB001F8FD92800B94F42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B531EB081F8FD92800B94F42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B531EB211F8FD92800B94F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B531EB221F8FD92800B94F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B531EB241F8FD92800B94F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B531EB251F8FD92800B94F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B531EB271F8FD92800B94F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmberCardKhoroshko.app/AmberCardKhoroshko";
+			};
+			name = Debug;
+		};
+		B531EB281F8FD92800B94F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmberCardKhoroshko.app/AmberCardKhoroshko";
+			};
+			name = Release;
+		};
+		B531EB2A1F8FD92800B94F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AmberCardKhoroshko;
+			};
+			name = Debug;
+		};
+		B531EB2B1F8FD92800B94F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 57UR83VR6Y;
+				INFOPLIST_FILE = AmberCardKhoroshkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AmberCardKhoroshko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B531EAF31F8FD92800B94F42 /* Build configuration list for PBXProject "AmberCardKhoroshko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531EB211F8FD92800B94F42 /* Debug */,
+				B531EB221F8FD92800B94F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B531EB231F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531EB241F8FD92800B94F42 /* Debug */,
+				B531EB251F8FD92800B94F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B531EB261F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531EB271F8FD92800B94F42 /* Debug */,
+				B531EB281F8FD92800B94F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B531EB291F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B531EB2A1F8FD92800B94F42 /* Debug */,
+				B531EB2B1F8FD92800B94F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B531EB031F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodel */,
+			);
+			currentVersion = B531EB031F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodel */;
+			path = AmberCardKhoroshko.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B531EAF01F8FD92800B94F42 /* Project object */;
+}
