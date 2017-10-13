@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EFF63F2B481958B5DE88D9E /* Pods_AmberCardKhoroshko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83E2500AFA626EB0B4FD289 /* Pods_AmberCardKhoroshko.framework */; };
 		B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */; };
-		B531EAFE1F8FD92800B94F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFD1F8FD92800B94F42 /* ViewController.swift */; };
 		B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EAFF1F8FD92800B94F42 /* Main.storyboard */; };
 		B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */; };
 		B531EB061F8FD92800B94F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B531EB051F8FD92800B94F42 /* Assets.xcassets */; };
 		B531EB091F8FD92800B94F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */; };
 		B531EB141F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB131F8FD92800B94F42 /* AmberCardKhoroshkoTests.swift */; };
 		B531EB1F1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB1E1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift */; };
+		B531EB2E1F8FDA0800B94F42 /* BasicImgLblTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB2C1F8FDA0800B94F42 /* BasicImgLblTVCell.swift */; };
+		B531EB2F1F8FDA0800B94F42 /* BasicImgLblTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B531EB2D1F8FDA0800B94F42 /* BasicImgLblTVCell.xib */; };
+		B531EB311F8FDB3700B94F42 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB301F8FDB3700B94F42 /* PlaceViewController.swift */; };
+		B531EB341F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EB321F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift */; };
+		B531EB351F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B531EB331F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib */; };
+		B5DBD1EB1F90DC9500A02253 /* NetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBD1EA1F90DC9500A02253 /* NetConnection.swift */; };
+		B5F0B8C41F901CA900C38B78 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0B8C31F901CA900C38B78 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B11937C76CECD42850E90434 /* Pods-AmberCardKhoroshko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmberCardKhoroshko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko.debug.xcconfig"; sourceTree = "<group>"; };
 		B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmberCardKhoroshko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B531EAFD1F8FD92800B94F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B531EB001F8FD92800B94F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B531EB031F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AmberCardKhoroshko.xcdatamodel; sourceTree = "<group>"; };
 		B531EB051F8FD92800B94F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		B531EB1A1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmberCardKhoroshkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531EB1E1F8FD92800B94F42 /* AmberCardKhoroshkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmberCardKhoroshkoUITests.swift; sourceTree = "<group>"; };
 		B531EB201F8FD92800B94F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B531EB2C1F8FDA0800B94F42 /* BasicImgLblTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicImgLblTVCell.swift; sourceTree = "<group>"; };
+		B531EB2D1F8FDA0800B94F42 /* BasicImgLblTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicImgLblTVCell.xib; sourceTree = "<group>"; };
+		B531EB301F8FDB3700B94F42 /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		B531EB321F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDescriptionPlaceCell.swift; sourceTree = "<group>"; };
+		B531EB331F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDescriptionPlaceCell.xib; sourceTree = "<group>"; };
+		B5DBD1EA1F90DC9500A02253 /* NetConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConnection.swift; sourceTree = "<group>"; };
+		B5F0B8C31F901CA900C38B78 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C8C281DA73D5C127AED5554D /* Pods-AmberCardKhoroshko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmberCardKhoroshko.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko.release.xcconfig"; sourceTree = "<group>"; };
+		F83E2500AFA626EB0B4FD289 /* Pods_AmberCardKhoroshko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmberCardKhoroshko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFF63F2B481958B5DE88D9E /* Pods_AmberCardKhoroshko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29AE94465BB81B7D9B5A20F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F83E2500AFA626EB0B4FD289 /* Pods_AmberCardKhoroshko.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AFDB9F6448498E54F9988FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B11937C76CECD42850E90434 /* Pods-AmberCardKhoroshko.debug.xcconfig */,
+				C8C281DA73D5C127AED5554D /* Pods-AmberCardKhoroshko.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B531EAEF1F8FD92800B94F42 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 				B531EB121F8FD92800B94F42 /* AmberCardKhoroshkoTests */,
 				B531EB1D1F8FD92800B94F42 /* AmberCardKhoroshkoUITests */,
 				B531EAF91F8FD92800B94F42 /* Products */,
+				5AFDB9F6448498E54F9988FA /* Pods */,
+				29AE94465BB81B7D9B5A20F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +135,9 @@
 		B531EAFA1F8FD92800B94F42 /* AmberCardKhoroshko */ = {
 			isa = PBXGroup;
 			children = (
-				B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */,
-				B531EAFD1F8FD92800B94F42 /* ViewController.swift */,
-				B531EAFF1F8FD92800B94F42 /* Main.storyboard */,
-				B531EB051F8FD92800B94F42 /* Assets.xcassets */,
-				B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */,
+				B5DBD1ED1F90E1A200A02253 /* Place */,
+				B5DBD1EF1F90E1D400A02253 /* Delegate */,
+				B5DBD1EE1F90E1C800A02253 /* UI */,
 				B531EB0A1F8FD92800B94F42 /* Info.plist */,
 				B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */,
 			);
@@ -128,6 +162,47 @@
 			path = AmberCardKhoroshkoUITests;
 			sourceTree = "<group>";
 		};
+		B5DBD1EC1F90E18F00A02253 /* PlaceCells */ = {
+			isa = PBXGroup;
+			children = (
+				B531EB321F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift */,
+				B531EB331F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib */,
+				B531EB2C1F8FDA0800B94F42 /* BasicImgLblTVCell.swift */,
+				B531EB2D1F8FDA0800B94F42 /* BasicImgLblTVCell.xib */,
+			);
+			name = PlaceCells;
+			sourceTree = "<group>";
+		};
+		B5DBD1ED1F90E1A200A02253 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				B531EB301F8FDB3700B94F42 /* PlaceViewController.swift */,
+				B5F0B8C31F901CA900C38B78 /* Place.swift */,
+				B5DBD1EA1F90DC9500A02253 /* NetConnection.swift */,
+				B5DBD1EC1F90E18F00A02253 /* PlaceCells */,
+			);
+			name = Place;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B5DBD1EE1F90E1C800A02253 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B531EAFF1F8FD92800B94F42 /* Main.storyboard */,
+				B531EB051F8FD92800B94F42 /* Assets.xcassets */,
+				B531EB071F8FD92800B94F42 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B5DBD1EF1F90E1D400A02253 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B531EB231F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshko" */;
 			buildPhases = (
+				E840B2B6A93F96EF01BAAC13 /* [CP] Check Pods Manifest.lock */,
 				B531EAF41F8FD92800B94F42 /* Sources */,
 				B531EAF51F8FD92800B94F42 /* Frameworks */,
 				B531EAF61F8FD92800B94F42 /* Resources */,
+				BD8A357836773D84410D4B60 /* [CP] Embed Pods Frameworks */,
+				68DAE6F2CABB21043E7A2F81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B531EB091F8FD92800B94F42 /* LaunchScreen.storyboard in Resources */,
+				B531EB2F1F8FDA0800B94F42 /* BasicImgLblTVCell.xib in Resources */,
 				B531EB061F8FD92800B94F42 /* Assets.xcassets in Resources */,
 				B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */,
+				B531EB351F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +340,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68DAE6F2CABB21043E7A2F81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8A357836773D84410D4B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E840B2B6A93F96EF01BAAC13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B531EAF41F8FD92800B94F42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B531EAFE1F8FD92800B94F42 /* ViewController.swift in Sources */,
+				B5DBD1EB1F90DC9500A02253 /* NetConnection.swift in Sources */,
+				B531EB311F8FDB3700B94F42 /* PlaceViewController.swift in Sources */,
+				B531EB2E1F8FDA0800B94F42 /* BasicImgLblTVCell.swift in Sources */,
 				B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */,
+				B5F0B8C41F901CA900C38B78 /* Place.swift in Sources */,
 				B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */,
+				B531EB341F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +549,7 @@
 		};
 		B531EB241F8FD92800B94F42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11937C76CECD42850E90434 /* Pods-AmberCardKhoroshko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57UR83VR6Y;
@@ -430,6 +563,7 @@
 		};
 		B531EB251F8FD92800B94F42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C281DA73D5C127AED5554D /* Pods-AmberCardKhoroshko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57UR83VR6Y;
@@ -518,6 +652,7 @@
 				B531EB251F8FD92800B94F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B531EB261F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +661,7 @@
 				B531EB281F8FD92800B94F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B531EB291F8FD92800B94F42 /* Build configuration list for PBXNativeTarget "AmberCardKhoroshkoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +670,7 @@
 				B531EB2B1F8FD92800B94F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

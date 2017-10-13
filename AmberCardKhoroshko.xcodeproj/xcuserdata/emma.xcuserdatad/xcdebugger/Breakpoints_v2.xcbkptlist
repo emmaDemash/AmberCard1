@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaceViewController.swift"
+            timestampString = "529586509.309917"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomDescriptionPlaceCell.swift"
+            timestampString = "529529510.487327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmberCardKhoroshko.CustomDescriptionPlaceCell.__deallocating_deinit"
+                  moduleName = "AmberCardKhoroshko"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emma/Desktop/Xcode/AmberCardKhoroshko/CustomDescriptionPlaceCell.swift"
+                  timestampString = "529529582.374621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmberCardKhoroshko.CustomDescriptionPlaceCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; AmberCardKhoroshko.CustomDescriptionPlaceCell"
+                  moduleName = "AmberCardKhoroshko"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emma/Desktop/Xcode/AmberCardKhoroshko/CustomDescriptionPlaceCell.swift"
+                  timestampString = "529529582.377602"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmberCardKhoroshko.CustomDescriptionPlaceCell.__allocating_init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; AmberCardKhoroshko.CustomDescriptionPlaceCell"
+                  moduleName = "AmberCardKhoroshko"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emma/Desktop/Xcode/AmberCardKhoroshko/CustomDescriptionPlaceCell.swift"
+                  timestampString = "529529582.379974"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmberCardKhoroshko.CustomDescriptionPlaceCell.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AmberCardKhoroshko.CustomDescriptionPlaceCell&gt;"
+                  moduleName = "AmberCardKhoroshko"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emma/Desktop/Xcode/AmberCardKhoroshko/CustomDescriptionPlaceCell.swift"
+                  timestampString = "529529582.381518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmberCardKhoroshko.CustomDescriptionPlaceCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AmberCardKhoroshko.CustomDescriptionPlaceCell&gt;"
+                  moduleName = "AmberCardKhoroshko"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emma/Desktop/Xcode/AmberCardKhoroshko/CustomDescriptionPlaceCell.swift"
+                  timestampString = "529529582.383049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

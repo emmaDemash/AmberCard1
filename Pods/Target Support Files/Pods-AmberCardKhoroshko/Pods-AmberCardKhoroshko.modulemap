@@ -1,0 +1,6 @@
+framework module Pods_AmberCardKhoroshko {
+  umbrella header "Pods-AmberCardKhoroshko-umbrella.h"
+
+  export *
+  module * { export * }
+}
