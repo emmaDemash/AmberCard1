@@ -9,19 +9,19 @@
 import Foundation
 
 class Place{
-    var placeMainImg:String = ""
-    var placeType:String = ""
-    var typeIcon:String = ""
-    var name:String = ""
-    var description:String = ""
-    var phoneNumber:String = ""
-    var costInfo:String = ""
-    var latitude:Double = 0.0
-    var longitude:Double = 0.0
-    var rate:String = ""
-    var adress:String = ""
-    var images:[String] = [""]
-    var workHours:String = ""
+    var placeMainImg: String = ""
+    var placeType: String = ""
+    var typeIcon: String = ""
+    var name : String?
+    var description: String = ""
+    var phoneNumber: String = ""
+    var costInfo: String = ""
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
+    var rate: String = ""
+    var adress: String = ""
+    var images: [String] = [""]
+    var workHours: String = ""
     
     
 }
