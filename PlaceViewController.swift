@@ -24,19 +24,19 @@ class PlaceViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var mainImage: UIImageView!
     
     var scrollOffset: CGPoint!
-    
-    let realm = try! Realm()
-    lazy var categories: Results<PlacesCategories> = { self.realm.objects(PlacesCategories.self) }()
-    lazy var points: Results<PlaceModel> = { self.realm.objects(PlaceModel.self) }()
-    
-    
+//    
+//    let realm = try! Realm()
+//    lazy var categories: Results<PlacesCategories> = { self.realm.objects(PlacesCategories.self) }()
+//    lazy var points: Results<PlaceModel> = { self.realm.objects(PlaceModel.self) }()
+//    
+//
     struct cellData {
         let name: String!
         var image: UIImage!
     }
     
     var place = PlaceModel()
-    
+    var photos = PhotosModel()
     
     var cellsArray = [cellData(name: "CustomDescriptionPlaceCell", image: #imageLiteral(resourceName: "defImg")),cellData(name: "BasicImgLblTVCellPhone", image: #imageLiteral(resourceName: "defImg")),cellData(name: "BasicImgLblTVCellAdress", image: #imageLiteral(resourceName: "defImg"))]
     
@@ -154,7 +154,7 @@ class PlaceViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     
-    func downloadImage(_ url: String) {
+    func downloadImage(place_id : int) {
         
         let urlPath = ("http://138.68.68.166:9999\(url)")
         Alamofire.request(urlPath).responseImage { response in

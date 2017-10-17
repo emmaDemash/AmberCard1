@@ -14,7 +14,7 @@ class PlaceModel: Object, Mappable{
     
     dynamic var id : Int = 0
     dynamic var name : String?
-    //  dynamic var category_id : RLMArray<Int>?
+    //  dynamic var category_id : RLMArray<Int>? многие ко многим как создать
     dynamic var description_text : String?
     dynamic var description_2 : String?
     dynamic var latitude : Double = 0.0

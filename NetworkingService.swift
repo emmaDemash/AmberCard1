@@ -57,7 +57,18 @@ class NetworkingService {
                                 for point in PointsDefaults { // 4
                                     
                                     let newPoint = PlaceModel()
-                                
+                                    let photo = PhotosModel()
+                                    
+                                    photo.place_id = (point["id"] as? Int)!
+                                    
+                                    let photos =  point["photos"] as? [String]
+                                    for picture in photos! {
+                                       photo.photo = picture
+                                      self.realm.add(photo)
+                                    }
+                                    
+                                    print(photo)
+                                    
                                     newPoint.id = (point["id"] as? Int)!
                                     newPoint.name = point["name"] as? String
                                     

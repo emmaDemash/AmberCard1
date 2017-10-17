@@ -10,6 +10,7 @@
 		9EFF63F2B481958B5DE88D9E /* Pods_AmberCardKhoroshko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83E2500AFA626EB0B4FD289 /* Pods_AmberCardKhoroshko.framework */; };
 		B507D5A81F96164100FD64C4 /* UIFont+ACAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5A71F96164100FD64C4 /* UIFont+ACAdditions.swift */; };
 		B507D5AB1F96168E00FD64C4 /* UIColor+ACAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5AA1F96168E00FD64C4 /* UIColor+ACAdditions.swift */; };
+		B507D5AD1F96424C00FD64C4 /* PlacePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */; };
 		B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */; };
 		B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EAFF1F8FD92800B94F42 /* Main.storyboard */; };
 		B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */; };
@@ -75,6 +76,7 @@
 		B11937C76CECD42850E90434 /* Pods-AmberCardKhoroshko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmberCardKhoroshko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko.debug.xcconfig"; sourceTree = "<group>"; };
 		B507D5A71F96164100FD64C4 /* UIFont+ACAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+ACAdditions.swift"; path = "../UIFont+ACAdditions.swift"; sourceTree = "<group>"; };
 		B507D5AA1F96168E00FD64C4 /* UIColor+ACAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ACAdditions.swift"; sourceTree = "<group>"; };
+		B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePhotos.swift; sourceTree = "<group>"; };
 		B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmberCardKhoroshko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B531EB001F8FD92800B94F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				B5DBD20A1F950B2B00A02253 /* PlacesCaregories.swift */,
 				B5DBD2041F94FF8200A02253 /* PlaceModelDB.swift */,
+				B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */,
 			);
 			name = RealmModels;
 			path = ..;
@@ -503,6 +506,7 @@
 				B5DBD2051F94FF8200A02253 /* PlaceModelDB.swift in Sources */,
 				B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */,
 				B531EB341F8FE37B00B94F42 /* CustomDescriptionPlaceCell.swift in Sources */,
+				B507D5AD1F96424C00FD64C4 /* PlacePhotos.swift in Sources */,
 				B507D5AB1F96168E00FD64C4 /* UIColor+ACAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

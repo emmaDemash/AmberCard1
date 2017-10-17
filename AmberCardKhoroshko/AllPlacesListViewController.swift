@@ -48,17 +48,15 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.allContentTableView.dataSource = self
         self.allContentTableView.delegate = self
-        
-        navigationController?.navigationBar.isHidden = true
         self.fetchAllData()
         
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
         
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -80,7 +78,7 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        
         performSegue(withIdentifier: "PlaceVC", sender: indexPath)
         
         
@@ -89,7 +87,7 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlaceVC" , let vc =  segue.destination as? PlaceViewController , let indexPath =  self.allContentTableView.indexPathForSelectedRow {
             vc.place = self.points[indexPath.row]
-            
+            allContentTableView.deselectRow(at: indexPath, animated: true)
         }
     }
 }
