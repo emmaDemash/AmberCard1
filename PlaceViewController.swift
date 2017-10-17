@@ -154,17 +154,17 @@ class PlaceViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     
-    func downloadImage(place_id : int) {
-        
-        let urlPath = ("http://138.68.68.166:9999\(url)")
-        Alamofire.request(urlPath).responseImage { response in
-            if let imag = response.result.value {
-                print("image downloaded1: \(urlPath)")
-                
-                self.mainImage.image = imag
-            }
-        }
-    }
+//    func downloadImage(place_id : int) {
+//        
+//        let urlPath = ("http://138.68.68.166:9999\(url)")
+//        Alamofire.request(urlPath).responseImage { response in
+//            if let imag = response.result.value {
+//                print("image downloaded1: \(urlPath)")
+//                
+//                self.mainImage.image = imag
+////            }
+//        }
+//    }
     
     
     
