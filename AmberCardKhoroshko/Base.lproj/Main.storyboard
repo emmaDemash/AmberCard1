@@ -104,32 +104,20 @@
                                             <constraint firstAttribute="bottom" secondItem="atp-xL-cdc" secondAttribute="bottom" id="yBR-T2-BGP"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-9w-dRF">
-                                        <rect key="frame" x="0.0" y="272" width="375" height="395"/>
-                                        <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ype-Hl-JNX">
-                                                <rect key="frame" x="0.0" y="8" width="375" height="387"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </tableView>
-                                        </subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ype-Hl-JNX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="ype-Hl-JNX" firstAttribute="leading" secondItem="drQ-9w-dRF" secondAttribute="leading" id="0zj-Y2-U9v"/>
-                                            <constraint firstItem="ype-Hl-JNX" firstAttribute="top" secondItem="drQ-9w-dRF" secondAttribute="top" constant="8" id="iXF-nZ-hAN"/>
-                                            <constraint firstAttribute="trailing" secondItem="ype-Hl-JNX" secondAttribute="trailing" id="s6H-wb-jah"/>
-                                            <constraint firstAttribute="bottom" secondItem="ype-Hl-JNX" secondAttribute="bottom" id="vwN-vT-fS7"/>
-                                        </constraints>
-                                    </view>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nvS-L2-76W" secondAttribute="trailing" constant="16" id="1GY-KB-H3N"/>
                                     <constraint firstItem="nvS-L2-76W" firstAttribute="leading" secondItem="Hwk-PM-KNg" secondAttribute="leading" constant="16" id="1SG-cF-Csp"/>
-                                    <constraint firstItem="drQ-9w-dRF" firstAttribute="top" secondItem="nvS-L2-76W" secondAttribute="bottom" constant="32" id="CM7-ie-vqG"/>
+                                    <constraint firstItem="ype-Hl-JNX" firstAttribute="leading" secondItem="Hwk-PM-KNg" secondAttribute="leading" id="4DF-jj-kRC"/>
                                     <constraint firstItem="nvS-L2-76W" firstAttribute="top" secondItem="Hwk-PM-KNg" secondAttribute="top" constant="40" id="KBY-W1-wk7"/>
-                                    <constraint firstAttribute="bottom" secondItem="drQ-9w-dRF" secondAttribute="bottom" id="LHY-d5-uEP"/>
-                                    <constraint firstItem="drQ-9w-dRF" firstAttribute="leading" secondItem="Hwk-PM-KNg" secondAttribute="leading" id="MZa-tH-SfW"/>
-                                    <constraint firstAttribute="trailing" secondItem="drQ-9w-dRF" secondAttribute="trailing" id="iYe-yE-C33"/>
+                                    <constraint firstAttribute="trailing" secondItem="ype-Hl-JNX" secondAttribute="trailing" id="TwE-65-LBf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ype-Hl-JNX" secondAttribute="bottom" id="XvY-1J-q4a"/>
+                                    <constraint firstItem="ype-Hl-JNX" firstAttribute="top" secondItem="Hwk-PM-KNg" secondAttribute="top" id="ffj-PS-VDX"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -146,7 +134,6 @@
                         <outlet property="allContentTableView" destination="ype-Hl-JNX" id="sig-vG-dkp"/>
                         <outlet property="bgView" destination="Hwk-PM-KNg" id="pRw-f0-fDt"/>
                         <outlet property="cardView" destination="nvS-L2-76W" id="MA0-22-jAY"/>
-                        <outlet property="designView" destination="drQ-9w-dRF" id="y0n-fa-OLV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="PlaceVC" id="hLc-WZ-SfE"/>
                     </connections>
                 </viewController>

@@ -19,21 +19,46 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     @IBOutlet weak var designView: UIView!
     @IBOutlet weak var allContentTableView: UITableView!
     
+    var scrollOffset: CGPoint!
     let realm = try! Realm()
     lazy var categories: Results<PlacesCategories> = { self.realm.objects(PlacesCategories.self) }()
     lazy var points: Results<PlaceModel> = { self.realm.objects(PlaceModel.self) }()
     
-    
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = Bundle.main.loadNibNamed("AllPlacesScreenCell", owner: self, options: nil)?.first as! AllPlacesScreenCell
+        cell.placeTypeLabel.text = ""
+        cell.placeTypeIcon =  nil
+        cell.placeName.text = ""
+        cell.placeDescription.text = ""
+        cell.discountLabel.text = ""
         
         let place = points[indexPath.row]
         cell.placeName.text = place.name
         cell.placeDescription.text = place.description_text
+        if let text = place.discount_max  {
+            cell.discountLabel.text = ("\(text)%")
+        }
         cell.setFonts()
+        
+        let categoryID = place.category_id[0]
+//        let category = categories[categoryID.value]
+        print(categoryID)
+        
+       // print("\(place.category_id[0].value)")
+       
+        
+//        let urlPath = ("http://138.68.68.166:9999\(category.picture!)")
+//        Alamofire.request(urlPath).responseImage  { response  in
+//            if let imag = response.result.value {
+//                cell.placeTypeIcon.image =  imag
+//            }
+//        }
+        
+       // var category = categories[placeTypeId!]
+        
+       // cell.placeTypeLabel.text = category.name
+        
         
         return cell
         
@@ -56,7 +81,10 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
         
+        self.allContentTableView.contentInset = UIEdgeInsetsMake(cardView.frame.height,0,0,0);
+        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -76,11 +104,10 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
         allContentTableView.reloadData()
     }
     
-    
+        
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "PlaceVC", sender: indexPath)
-        
         
     }
     

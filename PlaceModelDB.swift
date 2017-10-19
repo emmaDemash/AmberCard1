@@ -8,13 +8,14 @@
 
 import Foundation
 import RealmSwift
+import Realm
 import ObjectMapper
 
 class PlaceModel: Object, Mappable{
     
     dynamic var id : Int = 0
     dynamic var name : String?
-    //  dynamic var category_id : RLMArray<Int>? многие ко многим как создать
+    var category_id  = List<LinkToCategory>() //? многие ко многим как создать
     dynamic var description_text : String?
     dynamic var description_2 : String?
     dynamic var latitude : Double = 0.0
@@ -29,8 +30,7 @@ class PlaceModel: Object, Mappable{
     dynamic var discount_conditions : String?
     dynamic var min_people : String?
     dynamic var max_people : String?
-    //  dynamic var photos : Array<String>?
-    
+    var photos = List<PhotosModel>()
     
     
     override public static func primaryKey() -> String? {
@@ -62,7 +62,11 @@ class PlaceModel: Object, Mappable{
         discount_conditions <- map["discount_conditions"]
         min_people <- map["min_people"]
         max_people <- map["max_people"]
-        
+       
     }
-    
+  
+}
+
+class LinkToCategory: Object {
+    var value : Int = 101
 }

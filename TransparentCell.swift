@@ -10,6 +10,10 @@ import UIKit
 
 class TransparentCell: UITableViewCell {
 
+    
+    @IBOutlet weak var textCell: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

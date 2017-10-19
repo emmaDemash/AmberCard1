@@ -15,8 +15,8 @@ class CustomDescriptionPlaceCell: UITableViewCell {
      @IBOutlet weak var placeType: UILabel!
      @IBOutlet weak var placeName: UILabel!
      @IBOutlet weak var placeDescription: UILabel!
-     @IBOutlet weak var placeWorkingHours: UILabel!
-     @IBOutlet weak var placeCostDetails: UILabel!
+    
+     
 
 
 

@@ -6,16 +6,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomDescriptionPlaceCell" rowHeight="769" id="KGk-i7-Jjw" customClass="CustomDescriptionPlaceCell" customModule="AmberCardKhoroshko" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="769"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomDescriptionPlaceCell" rowHeight="610" id="KGk-i7-Jjw" customClass="CustomDescriptionPlaceCell" customModule="AmberCardKhoroshko" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="610"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="768.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музеи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwy-gE-Fpq">
@@ -49,18 +50,6 @@ Altes Haus — Hufen</string>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ4-al-BxO">
                         <rect key="frame" x="24" y="120" width="272" height="467"/>
                         <string key="text">Музей показывает обстановку семейного быта семьи Густава Гросманна, купца и владельца продовольственного магазина и рассказывает историю городского района Хуфен. Здание на Шрёттерштрассе 11-13 было построено в 1912 году под доходный дом. Мы вместе прогуляемся по району Хуфен, узнаем историю доходных домов по улице Шрётерштрассе, где расположен дом герра Гроссмана, рассмотрим предметы мужского обихода: головные уборы, обувь, курительные трубки и аксессуары для курения, костюмы той эпохи. Загляните в Altes Haus — Hufen, чтобы увидеть, чем жили мужчины Кёнигсберга на рубеже XIX и ХХ веков.</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость посещения: для взрослых и детей страше 14 лет — 200 рублей, для детей — 100 рублей, для детей до 3 лет — бесплатно." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niE-OP-4eM">
-                        <rect key="frame" x="24" y="660" width="272" height="101.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Режим работы: пн-пт с 11:00 до 22:00." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tG-1T-FeD">
-                        <rect key="frame" x="24" y="603" width="272" height="41"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -122,21 +111,15 @@ Altes Haus — Hufen</string>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="niE-OP-4eM" firstAttribute="top" secondItem="2tG-1T-FeD" secondAttribute="bottom" constant="16" id="0mA-YC-Wb5"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="tQ4-al-BxO" secondAttribute="bottom" constant="8" id="7Zs-Oz-UIG"/>
                     <constraint firstItem="tQ4-al-BxO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="A2w-oH-rcx"/>
                     <constraint firstAttribute="trailing" secondItem="ev2-lR-jRG" secondAttribute="trailing" constant="40" id="A9f-dh-cob"/>
-                    <constraint firstAttribute="trailing" secondItem="niE-OP-4eM" secondAttribute="trailing" constant="24" id="BuZ-cG-0OP"/>
                     <constraint firstAttribute="trailing" secondItem="tQ4-al-BxO" secondAttribute="trailing" constant="24" id="COy-Xc-cBW"/>
                     <constraint firstItem="mcg-M7-3Pv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="E2y-sp-hAL"/>
                     <constraint firstItem="ev2-lR-jRG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Fc4-xo-1BE"/>
-                    <constraint firstAttribute="trailing" secondItem="2tG-1T-FeD" secondAttribute="trailing" constant="24" id="FhJ-Pb-WGf"/>
                     <constraint firstAttribute="trailing" secondItem="tFg-YD-0Id" secondAttribute="trailing" constant="24" id="IFO-KV-nVN"/>
-                    <constraint firstItem="niE-OP-4eM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="PRb-gC-HMR"/>
                     <constraint firstItem="tQ4-al-BxO" firstAttribute="top" secondItem="ev2-lR-jRG" secondAttribute="bottom" constant="12" id="QOh-jG-zSg"/>
                     <constraint firstItem="tFg-YD-0Id" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="T7G-w6-x64"/>
-                    <constraint firstItem="2tG-1T-FeD" firstAttribute="top" secondItem="tQ4-al-BxO" secondAttribute="bottom" constant="16" id="ark-a1-Sjr"/>
-                    <constraint firstItem="2tG-1T-FeD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="fts-7H-Ldb"/>
-                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="niE-OP-4eM" secondAttribute="bottom" constant="16" id="fvb-hd-fuZ"/>
                     <constraint firstItem="iwy-gE-Fpq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="mVj-zg-kbf"/>
                     <constraint firstItem="iwy-gE-Fpq" firstAttribute="leading" secondItem="mcg-M7-3Pv" secondAttribute="trailing" constant="16" id="oav-e4-QmG"/>
                     <constraint firstItem="ev2-lR-jRG" firstAttribute="top" secondItem="mcg-M7-3Pv" secondAttribute="bottom" constant="12" id="wfT-QR-rSB"/>
@@ -144,14 +127,12 @@ Altes Haus — Hufen</string>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="placeCostDetails" destination="niE-OP-4eM" id="74i-57-YG1"/>
                 <outlet property="placeDescription" destination="tQ4-al-BxO" id="9ZG-nc-fc4"/>
                 <outlet property="placeName" destination="ev2-lR-jRG" id="Ryr-Om-qxP"/>
                 <outlet property="placeType" destination="iwy-gE-Fpq" id="60j-wz-teq"/>
                 <outlet property="placeTypeIcon" destination="mcg-M7-3Pv" id="zE9-3c-ljd"/>
-                <outlet property="placeWorkingHours" destination="2tG-1T-FeD" id="DVm-ev-dr4"/>
             </connections>
-            <point key="canvasLocation" x="-24" y="134.5"/>
+            <point key="canvasLocation" x="-24" y="55"/>
         </tableViewCell>
     </objects>
 </document>

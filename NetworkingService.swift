@@ -30,7 +30,6 @@ class NetworkingService {
             
             if let json = response.result.value {
                 if let jsondata = json as? [String: Any] {
-                    
                     do {
                         print(jsondata)
                         try! self.realm.write() { // 2
@@ -53,26 +52,31 @@ class NetworkingService {
                         try! self.realm.write() {
                             if let PointsDefaults = jsondata["points"] as? [[String: Any]]
                             {
-                                
                                 for point in PointsDefaults { // 4
-                                    
                                     let newPoint = PlaceModel()
-                                    let photo = PhotosModel()
-                                    
-                                    photo.place_id = (point["id"] as? Int)!
-                                    
+    
                                     let photos =  point["photos"] as? [String]
-                                    for picture in photos! {
-                                       photo.photo = picture
-                                      self.realm.add(photo)
-                                    }
                                     
-                                    print(photo)
+                                    for picture in photos! {
+                                        let photo = PhotosModel()
+                                        photo.place_id = (point["id"] as? Int)!
+                                        photo.photo = picture
+                                        newPoint.photos.append(photo)
+                                    }
+                                    let categoryArray = point["category_id"] as? [Int]
+                                    print("categoryArray \(categoryArray!)")
+                                    
+                                    for item in categoryArray! {
+                                        let category = LinkToCategory()
+                                        print("categoryArray \(item)")
+                                        category.value = item
+                                        
+                                        newPoint.category_id.append(category)
+                                    }
+                                    print("categoryArray \(newPoint.category_id)")
                                     
                                     newPoint.id = (point["id"] as? Int)!
                                     newPoint.name = point["name"] as? String
-                                    
-                                    //		if (dictionary["category_id"] != nil) { category_id = Categories.modelsFromDictionaryArray(dictionary["category_id"] as! NSArray) }
                                     newPoint.description_text = point["description"] as? String
                                     newPoint.description_2 = point["description_2"] as? String
                                     newPoint.latitude = (point["latitude"] as? Double)!
@@ -101,13 +105,13 @@ class NetworkingService {
     
     
     
-//    func getHomeworld(homeworldLink: String, completion: @escaping (String) -> Void) {
-//        Alamofire.request(homeworldLink).responseJSON { (response) in
-//            guard let json = response.result.value as? JSON,
-//                let name = json["name"] as? String
-//                else { print("NOPE"); return }
-//            print("GOT HERE")
-//            completion(name)
-     //   }
-//    }
+    //    func getHomeworld(homeworldLink: String, completion: @escaping (String) -> Void) {
+    //        Alamofire.request(homeworldLink).responseJSON { (response) in
+    //            guard let json = response.result.value as? JSON,
+    //                let name = json["name"] as? String
+    //                else { print("NOPE"); return }
+    //            print("GOT HERE")
+    //            completion(name)
+    //   }
+    //    }
 }
