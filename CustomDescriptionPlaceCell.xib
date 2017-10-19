@@ -19,11 +19,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музеи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwy-gE-Fpq">
-                        <rect key="frame" x="64" y="9" width="100" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музеи" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwy-gE-Fpq">
+                        <rect key="frame" x="64" y="9" width="129" height="24"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="IFY-iO-kfv"/>
-                            <constraint firstAttribute="height" constant="22" id="hsu-j5-hbW"/>
+                            <constraint firstAttribute="height" constant="24" id="hsu-j5-hbW"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -57,35 +56,35 @@ Altes Haus — Hufen</string>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-YD-0Id">
                         <rect key="frame" x="197" y="12" width="99" height="16"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-1L-mZ6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-1L-mZ6">
                                 <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="h9L-1d-eXv"/>
                                     <constraint firstAttribute="height" constant="16" id="xJQ-mM-VAi"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-Js-A70">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-Js-A70">
                                 <rect key="frame" x="20" y="0.0" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="4j4-nI-nJ0"/>
                                     <constraint firstAttribute="height" constant="16" id="wR5-Kx-KFw"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-2L-Mei">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-2L-Mei">
                                 <rect key="frame" x="40" y="0.0" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="Opn-DZ-Ag1"/>
                                     <constraint firstAttribute="height" constant="16" id="xKP-SK-0MX"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwY-ap-m5O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="WwY-ap-m5O">
                                 <rect key="frame" x="60" y="0.0" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="Rcw-KQ-Syj"/>
                                     <constraint firstAttribute="height" constant="16" id="gZC-zD-IGd"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-oy-iev">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-oy-iev">
                                 <rect key="frame" x="80" y="0.0" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="0XX-HK-I4w"/>
@@ -118,6 +117,7 @@ Altes Haus — Hufen</string>
                     <constraint firstItem="mcg-M7-3Pv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="E2y-sp-hAL"/>
                     <constraint firstItem="ev2-lR-jRG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Fc4-xo-1BE"/>
                     <constraint firstAttribute="trailing" secondItem="tFg-YD-0Id" secondAttribute="trailing" constant="24" id="IFO-KV-nVN"/>
+                    <constraint firstItem="tFg-YD-0Id" firstAttribute="leading" secondItem="iwy-gE-Fpq" secondAttribute="trailing" constant="4" id="Q17-xP-T5s"/>
                     <constraint firstItem="tQ4-al-BxO" firstAttribute="top" secondItem="ev2-lR-jRG" secondAttribute="bottom" constant="12" id="QOh-jG-zSg"/>
                     <constraint firstItem="tFg-YD-0Id" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="T7G-w6-x64"/>
                     <constraint firstItem="iwy-gE-Fpq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="mVj-zg-kbf"/>
@@ -135,4 +135,7 @@ Altes Haus — Hufen</string>
             <point key="canvasLocation" x="-24" y="55"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_star" width="20" height="20"/>
+    </resources>
 </document>

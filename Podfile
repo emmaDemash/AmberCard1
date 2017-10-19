@@ -6,7 +6,7 @@ target 'AmberCardKhoroshko' do
     pod 'Alamofire', '~> 4.5'
     pod 'AlamofireImage', '~> 3.3'
     pod 'ObjectMapper', '~> 2.2'
-
+    pod 'YandexMapKit'
 end
 
 

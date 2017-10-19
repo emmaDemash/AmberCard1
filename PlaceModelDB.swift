@@ -67,6 +67,17 @@ class PlaceModel: Object, Mappable{
   
 }
 
-class LinkToCategory: Object {
-    var value : Int = 101
+class LinkToCategory: Object,Mappable {
+    dynamic var value :  Int = 0
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+
+    func mapping(map: Map) {
+        
+        value   <- map["category_id"]
+       
+    }
+    
 }

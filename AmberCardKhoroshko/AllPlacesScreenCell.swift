@@ -19,9 +19,7 @@ class AllPlacesScreenCell: UITableViewCell {
     @IBOutlet weak var placeName: UILabel!
 
     @IBOutlet weak var placeDescription: UILabel!
-
     @IBOutlet weak var metersToDestination: UILabel!
-
     @IBOutlet weak var locationIcon: UIImageView!
     @IBOutlet weak var discountIcon: UIImageView!
 

@@ -11,6 +11,8 @@
 		B507D5A81F96164100FD64C4 /* UIFont+ACAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5A71F96164100FD64C4 /* UIFont+ACAdditions.swift */; };
 		B507D5AB1F96168E00FD64C4 /* UIColor+ACAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5AA1F96168E00FD64C4 /* UIColor+ACAdditions.swift */; };
 		B507D5AD1F96424C00FD64C4 /* PlacePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */; };
+		B507D5B01F990CB600FD64C4 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507D5AE1F990CB600FD64C4 /* MapTableViewCell.swift */; };
+		B507D5B11F990CB600FD64C4 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B507D5AF1F990CB600FD64C4 /* MapTableViewCell.xib */; };
 		B531EAFC1F8FD92800B94F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */; };
 		B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531EAFF1F8FD92800B94F42 /* Main.storyboard */; };
 		B531EB041F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B531EB021F8FD92800B94F42 /* AmberCardKhoroshko.xcdatamodeld */; };
@@ -74,9 +76,12 @@
 
 /* Begin PBXFileReference section */
 		B11937C76CECD42850E90434 /* Pods-AmberCardKhoroshko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmberCardKhoroshko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmberCardKhoroshko/Pods-AmberCardKhoroshko.debug.xcconfig"; sourceTree = "<group>"; };
+		B5068F7A1F9917820048E8B6 /* YandexMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexMap.h; sourceTree = "<group>"; };
 		B507D5A71F96164100FD64C4 /* UIFont+ACAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+ACAdditions.swift"; path = "../UIFont+ACAdditions.swift"; sourceTree = "<group>"; };
 		B507D5AA1F96168E00FD64C4 /* UIColor+ACAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ACAdditions.swift"; sourceTree = "<group>"; };
 		B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePhotos.swift; sourceTree = "<group>"; };
+		B507D5AE1F990CB600FD64C4 /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		B507D5AF1F990CB600FD64C4 /* MapTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
 		B531EAF81F8FD92800B94F42 /* AmberCardKhoroshko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmberCardKhoroshko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531EAFB1F8FD92800B94F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B531EB001F8FD92800B94F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +236,7 @@
 				B5DBD20A1F950B2B00A02253 /* PlacesCaregories.swift */,
 				B5DBD2041F94FF8200A02253 /* PlaceModelDB.swift */,
 				B507D5AC1F96424C00FD64C4 /* PlacePhotos.swift */,
+				B5068F7A1F9917820048E8B6 /* YandexMap.h */,
 			);
 			name = RealmModels;
 			path = ..;
@@ -245,6 +251,8 @@
 				B531EB2D1F8FDA0800B94F42 /* BasicImgLblTVCell.xib */,
 				B5DBD1F01F94B89B00A02253 /* TransparentCell.swift */,
 				B5DBD1F11F94B89B00A02253 /* TransparentCell.xib */,
+				B507D5AE1F990CB600FD64C4 /* MapTableViewCell.swift */,
+				B507D5AF1F990CB600FD64C4 /* MapTableViewCell.xib */,
 			);
 			name = PlaceCells;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 				B531EB011F8FD92800B94F42 /* Main.storyboard in Resources */,
 				B5DBD2111F95280A00A02253 /* AllPlacesScreenCell.xib in Resources */,
 				B5DBD1F31F94B89B00A02253 /* TransparentCell.xib in Resources */,
+				B507D5B11F990CB600FD64C4 /* MapTableViewCell.xib in Resources */,
 				B531EB351F8FE37B00B94F42 /* CustomDescriptionPlaceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +502,7 @@
 			files = (
 				B537B1C81F96127800F5F5F9 /* Fonts.swift in Sources */,
 				B5DBD20D1F9527C100A02253 /* AllPlacesListViewController.swift in Sources */,
+				B507D5B01F990CB600FD64C4 /* MapTableViewCell.swift in Sources */,
 				B531EB311F8FDB3700B94F42 /* PlaceViewController.swift in Sources */,
 				B537B1C51F95F1CB00F5F5F9 /* NetworkingService.swift in Sources */,
 				B5DBD1F21F94B89B00A02253 /* TransparentCell.swift in Sources */,
@@ -667,9 +677,49 @@
 				);
 				INFOPLIST_FILE = AmberCardKhoroshko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"YandexMapKit\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++.6\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"OpenAL\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YandexMap.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -685,9 +735,49 @@
 				);
 				INFOPLIST_FILE = AmberCardKhoroshko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"YandexMapKit\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++.6\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"ObjectMapper\"",
+					"-framework",
+					"\"OpenAL\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Khoroshko.AmberCardKhoroshko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YandexMap.h;
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};

@@ -12,10 +12,10 @@ import ObjectMapper
 
 public class PlacesCategories: Object, Mappable {
     
-     var id : Int?
-     var name : String?
-     var icon : String?
-     var picture : String?
+    dynamic var id : Int = 0
+    dynamic var name : String?
+    dynamic var icon : String?
+    dynamic var picture : String?
     
     
     required convenience public init?(map: Map) {

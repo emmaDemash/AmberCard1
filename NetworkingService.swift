@@ -39,9 +39,11 @@ class NetworkingService {
                                 for category  in categoryDefaults {
                                     
                                     let newCategory = PlacesCategories()
-                                    newCategory.icon = category["icon"] as? String
-                                    newCategory.id = category["id"] as? Int
-                                    newCategory.picture = category["picture"] as? String
+                                    newCategory.icon = (category["icon"] as? String)!
+                                    newCategory.name = (category["name"] as? String)!
+                                    newCategory.id = (category["id"] as? Int)!
+                                    newCategory.picture = (category["picture"] as? String)!
+                                    print(newCategory)
                                     self.realm.add(newCategory)
                                 }
                             }
@@ -54,7 +56,7 @@ class NetworkingService {
                             {
                                 for point in PointsDefaults { // 4
                                     let newPoint = PlaceModel()
-    
+                                    
                                     let photos =  point["photos"] as? [String]
                                     
                                     for picture in photos! {
@@ -64,16 +66,15 @@ class NetworkingService {
                                         newPoint.photos.append(photo)
                                     }
                                     let categoryArray = point["category_id"] as? [Int]
-                                    print("categoryArray \(categoryArray!)")
                                     
                                     for item in categoryArray! {
-                                        let category = LinkToCategory()
-                                        print("categoryArray \(item)")
-                                        category.value = item
                                         
+                                        let category = LinkToCategory()
+                                        category.value = item
                                         newPoint.category_id.append(category)
+                                        //print(category)
+                                        
                                     }
-                                    print("categoryArray \(newPoint.category_id)")
                                     
                                     newPoint.id = (point["id"] as? Int)!
                                     newPoint.name = point["name"] as? String
@@ -91,7 +92,7 @@ class NetworkingService {
                                     newPoint.discount_conditions = point["discount_conditions"] as? String
                                     newPoint.min_people = point["min_people"] as? String
                                     newPoint.max_people = point["max_people"] as? String
-                                    
+                                    print(newPoint)
                                     self.realm.add(newPoint, update: true)
                                 }
                             }

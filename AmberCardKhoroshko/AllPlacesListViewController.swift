@@ -18,11 +18,28 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var designView: UIView!
     @IBOutlet weak var allContentTableView: UITableView!
-    
+    let baseURL = "http://138.68.68.166:9999"
     var scrollOffset: CGPoint!
     let realm = try! Realm()
     lazy var categories: Results<PlacesCategories> = { self.realm.objects(PlacesCategories.self) }()
     lazy var points: Results<PlaceModel> = { self.realm.objects(PlaceModel.self) }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.allContentTableView.dataSource = self
+        self.allContentTableView.delegate = self
+        self.fetchAllData()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        navigationController?.navigationBar.isHidden = true
+        
+        
+    }
+    override func viewWillLayoutSubviews() {
+        self.allContentTableView.contentInset = UIEdgeInsetsMake(cardView.frame.height+40,0,0,0);
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -36,29 +53,31 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
         let place = points[indexPath.row]
         cell.placeName.text = place.name
         cell.placeDescription.text = place.description_text
+        
         if let text = place.discount_max  {
             cell.discountLabel.text = ("\(text)%")
         }
-        cell.setFonts()
         
-        let categoryID = place.category_id[0]
-//        let category = categories[categoryID.value]
-        print(categoryID)
+        let category = self.findOutCategory(place: place)
+        cell.placeTypeLabel.text = category.name
+        let categoryID = place.category_id[0].value
         
-       // print("\(place.category_id[0].value)")
-       
-        
-//        let urlPath = ("http://138.68.68.166:9999\(category.picture!)")
-//        Alamofire.request(urlPath).responseImage  { response  in
-//            if let imag = response.result.value {
-//                cell.placeTypeIcon.image =  imag
-//            }
-//        }
-        
-       // var category = categories[placeTypeId!]
-        
-       // cell.placeTypeLabel.text = category.name
-        
+       // print("category.name \(categoryID)")
+       // print(categories)
+        for cat in categories {
+            if cat.id == categoryID {
+//                
+//                if let urlPath = cat.icon {
+//                    let path = ("\(baseURL)\(urlPath)")
+//                    Alamofire.request(path).responseImage  { response  in
+//                        if let imag = response.result.value {
+//                            cell.placeTypeIcon.image = imag
+//                        }
+//                    }
+//                }
+           //cell.placeTypeLabel.text = cat.name!
+            }
+        }
         
         return cell
         
@@ -71,19 +90,6 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.allContentTableView.dataSource = self
-        self.allContentTableView.delegate = self
-        self.fetchAllData()
-        
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
-        
-        self.allContentTableView.contentInset = UIEdgeInsetsMake(cardView.frame.height,0,0,0);
-        
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -99,12 +105,12 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
         
         NetworkingService.shared.getAllPlaces()
         self.points = self.realm.objects(PlaceModel.self)
-        print(self.points)
+       // print(self.points)
         self.categories = self.realm.objects(PlacesCategories.self)
         allContentTableView.reloadData()
     }
     
-        
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "PlaceVC", sender: indexPath)
@@ -114,7 +120,23 @@ class AllPlacesListViewController: UIViewController, UITableViewDelegate,UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlaceVC" , let vc =  segue.destination as? PlaceViewController , let indexPath =  self.allContentTableView.indexPathForSelectedRow {
             vc.place = self.points[indexPath.row]
+            vc.placeType = self.findOutCategory(place: self.points[indexPath.row])
             allContentTableView.deselectRow(at: indexPath, animated: true)
         }
+    }
+    
+    
+    
+    func findOutCategory (place:PlaceModel) -> PlacesCategories{
+        
+        let categoryID = place.category_id[0].value
+        var category = PlacesCategories()
+       // print(categories)
+        for cat in categories {
+            if cat.id == categoryID {
+                category = cat
+            }
+        }
+        return category
     }
 }

@@ -20,10 +20,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музеи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpi-QW-Och">
-                        <rect key="frame" x="56" y="17" width="100" height="22"/>
+                        <rect key="frame" x="56" y="17" width="192" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="A7x-nd-cTZ"/>
-                            <constraint firstAttribute="width" constant="100" id="htq-IE-MaM"/>
+                            <constraint firstAttribute="width" constant="192" id="htq-IE-MaM"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
